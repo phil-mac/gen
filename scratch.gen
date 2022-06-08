@@ -1,0 +1,10 @@
+(def
+  sum2 
+  (fn (n acc) 
+  (if (= n 0) 
+    acc 
+    (do
+      (prn "yo")
+      (sum2 (- n 1) (+ n acc))))))
+
+(sum2 10 0)

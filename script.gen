@@ -1,0 +1,19 @@
+(def 
+  line 
+  (fn* (len)
+    (do
+      (block len len len)
+      (if (> len 0) 
+        (line (- len 1))
+        "done"))))
+
+(line 7)
+
+(def!
+  diagonal
+  (fn (x y len)
+     (do
+        (block x y)
+        (if (> len 0)
+           (diagonal (+ x 1) (+ y 1) (- len 1))
+            "done"))))
