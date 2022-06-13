@@ -9,7 +9,7 @@
 
 (line 7)
 
-(def!
+(def
   diagonal
   (fn (x y len)
      (do
